@@ -342,7 +342,7 @@ button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
     </div>
     <div class="slot hero-shot">
       <div class="slot-lbl"><b>media/hero-shop.webp</b>2400 × 1350 · the shop floor, lights on, mirrors visible<span>see media-setup.md</span></div>
-      <img src="media/hero-shop.webp" alt="Inside Aura Cuts — barber chairs and mirrors" width="2400" height="1350" onerror="this.remove()">
+      <img src="media/hero-shop.webp" alt="Inside Aura Cuts — barber chairs and mirrors" width="2400" height="1350" onerror="this.dataset.tried?this.remove():(this.dataset.tried=1,this.src=this.src.replace(/\.webp$/,'.png'))">
     </div>
   </div>
 </section>
@@ -675,7 +675,7 @@ const SHOP = {
   function slot(file, w, h, note){
     return '<div class="slot shot"><div class="slot-lbl"><b>media/'+file+'</b>'+w+' × '+h+
       (note ? ' · '+note : '') + '</div><img src="media/'+file+'" alt="" width="'+w+'" height="'+h+
-      '" loading="lazy" onerror="this.remove()"></div>';
+      '" loading="lazy" onerror="this.dataset.tried?this.remove():(this.dataset.tried=1,this.src=this.src.replace(/\\.webp$/,\'.png\'))"></div>';
   }
 
   function message(){
@@ -862,7 +862,7 @@ const SHOP = {
   "priceRange": "Rs 250 – Rs 6,000",
   "currenciesAccepted": "PKR",
   "paymentAccepted": "Cash, JazzCash, Easypaisa",
-  "image": "https://auracuts.pk/media/hero-shop.webp",
+  "image": "https://auracuts.pk/media/hero-shop.png",
   "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJZ_bZGus5sz4R0WR8MJ4QCtM",
   "address": {
     "@type": "PostalAddress",
