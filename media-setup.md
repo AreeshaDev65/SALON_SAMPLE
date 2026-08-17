@@ -1,9 +1,16 @@
 # Aura Cuts — media setup
 
-The site runs with **zero images present**. Every image slot shows a labelled placeholder
-with its own filename printed on it, so the layout and copy can be signed off before the
-photography happens. Drop a file into `media/` with the exact name below and it appears.
-No code changes, ever.
+> **Current state:** every slot below is filled with a generated placeholder graphic —
+> simple brass-and-ink line-art icons (scissors, razor, chair, monogram avatars, a wordmark
+> card) drawn to match the site's palette. **None of these are real photos of the shop.**
+> They exist so the layout reads as finished while real photography is pending. Replace
+> each file with the real photo using the exact same filename and the placeholder is gone —
+> no code changes, ever.
+
+Before these placeholders were added, the site ran with **zero images present** — every
+slot showed a labelled text placeholder with its own filename printed on it, so the layout
+and copy could be signed off before the photography happens. Drop a file into `media/`
+with the exact name below and it appears.
 
 ```
 aura-cuts/
